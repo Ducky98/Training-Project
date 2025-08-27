@@ -1,0 +1,79 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboards",
+      "icon": "menu-icon tf-icons ri-home-smile-line",
+      "slug": "dashboard"
+    },
+    {
+      "url": "/attendances",
+      "name": "Attendance",
+      "icon": "menu-icon tf-icons ri-home-smile-line",
+      "slug": "attendances"
+    },
+
+    {
+      "menuHeader": "Management"
+    },
+    {
+      "name": "Client",
+      "icon": "menu-icon tf-icons ri-bill-line",
+      "slug": "admin.invoice",
+      "url": "client/"
+    },
+    {
+      "name": "Employee",
+      "icon": "menu-icon tf-icons ri-user-heart-line",
+      "slug": "admin.employee",
+      "url": "employee/",
+      "submenu": [
+        {
+          "url": "employee/all",
+          "name": "All Employee",
+          "slug": "admin.employee.index"
+        },
+        {
+          "url": "employee/new",
+          "name": "Add Employee",
+          "slug": "admin.employee.create"
+        }
+        ]
+    },
+    {
+      "name": "Invoice",
+      "icon": "menu-icon tf-icons ri-bill-line",
+      "slug": "admin.invoice",
+      "submenu": [
+        {
+          "url": "invoice/new",
+          "name": "Generate Invoice",
+          "slug": "admin.invoice.create"
+        },
+        {
+          "url": "invoice/",
+          "name": "Invoices",
+          "slug": "admin.invoice.index"
+        }
+
+      ]
+    },
+    {
+      "menuHeader": "Configuration"
+    },
+
+    {
+      "name": "Admin Config",
+      "url" : "config/admin/",
+      "icon": "menu-icon tf-icons ri-file-code-line",
+      "slug": "admin.config.adminConfig"
+    },
+
+    {
+      "name": "Employee Config",
+      "url" : "config/employee/",
+      "icon": "menu-icon tf-icons ri-file-code-line",
+      "slug": "admin.config.employeeConfig"
+    }
+  ]
+}
